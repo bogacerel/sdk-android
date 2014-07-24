@@ -30,7 +30,7 @@
         - [Text colors](#text-colors)
         - [Input field styles](#input-field-styles)
     - [Android settings](#android-settings)
-        - [AndroidManifest.xml](#androidmanifest-xml)
+        - [AndroidManifest.xml](#androidmanifestxml)
         - [Android permissions](#android-permissions)
     - [Examples](#examples)
         - [Payment examples](#payment)
@@ -558,7 +558,7 @@ following table.
 You must edit your AndroidManifest.xml according to following AndroidManifest.xml file. The file is also inside
 sample-app.
 
-Please check file [here](#AndroidManifest.xml)
+Please check file [here](#https://github.com/iyzi/sdk-android/blob/master/AndroidManifest.xml)
 
 ### Android permissions
 
