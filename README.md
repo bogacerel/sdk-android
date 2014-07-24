@@ -457,12 +457,17 @@ this.setFailMessage("Payment failed");
 
 You can edit gui configuration by editing res/values/styles.xml file.
 
+------------------------
+
 
 #### Layouts
 
 ------------------------
 
 Developers can edit files inside Res/layout folder according to their needs.
+
+------------------------
+
 
 #### Changing colours
 
@@ -472,6 +477,9 @@ Screen background, text colours and foreground colour can be changed by applicat
 developers.
 
 
+------------------------
+
+
 ##### Changing background
 
 ------------------------
@@ -479,6 +487,9 @@ developers.
 To change screen background colour, please edit following line:
 <color name="background_color">#FFFFFF</color>
 You can change #FFFFFF to another colour.
+
+
+------------------------
 
 
 ##### Text colors
@@ -492,6 +503,8 @@ To change text colors, please check lines inside layout file.
 <color name="bright_red">#F74848</color>
 <color name="bright_green">#85FF89</color>
 ```
+
+------------------------
 
 
 #### Input field styles
