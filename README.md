@@ -599,7 +599,7 @@ public class SingleCheckoutActivity extends PaymentActivity {
     public void onCreate(Bundle savedInstanceState) {
           this.setApiId("apiId");
           this.setSecret("secret");
-          this.setAmount(617.99);
+          this.setAmount(0.01);
           this.setCurrency(CurrencyEnum.TRY);
           this.setSuccessMessage(getString(R.string.title_activity_success));
           this.setFailMessage(getString(R.string.title_activity_fail));
@@ -632,7 +632,7 @@ public class InstallmentActivity extends PaymentActivity {
     public void onCreate(Bundle savedInstanceState) {
         this.setApiId("apiId");
         this.setSecret("secret");
-        this.setAmount(617.99);
+        this.setAmount(0.01);
         this.setCurrency(CurrencyEnum.TRY);
         this.setSuccessMessage(getString(R.string.title_activity_success));
         this.setFailMessage(getString(R.string.title_activity_fail));
@@ -664,7 +664,7 @@ public class PayRegisteredActivity extends PaymentActivity {
       public void onCreate(Bundle savedInstanceState) {
           this.setApiId("apiId");
           this.setSecret("secret");
-          this.setAmount(617.99);
+          this.setAmount(0.01);
           this.setCurrency(CurrencyEnum.TRY);
           this.setSuccessMessage(getString(R.string.title_activity_success));
           this.setFailMessage(getString(R.string.title_activity_fail));
@@ -711,7 +711,7 @@ public class CardRegisterActivity extends PaymentActivity {
   public void onCreate(Bundle savedInstanceState) {
           this.setApiId("apiId");
           this.setSecret("secret");
-          this.setAmount(617.99);
+          this.setAmount(0.01);
           this.setCurrency(CurrencyEnum.TRY);
           this.setSuccessMessage(getString(R.string.card_registered_successful));
           this.setFailMessage(getString(R.string.card_registered_failed));
