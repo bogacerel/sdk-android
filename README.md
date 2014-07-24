@@ -1,4 +1,4 @@
-# iyzi/sdk-android
+# iyzico/sdk-android
 
 ## Contents
 
@@ -558,7 +558,7 @@ following table.
 You must edit your AndroidManifest.xml according to following AndroidManifest.xml file. The file is also inside
 sample-app.
 
-Please check file [here](#https://github.com/iyzi/sdk-android/blob/master/AndroidManifest.xml)
+Please check file [here](https://github.com/iyzico/sdk-android/blob/master/AndroidManifest.xml)
 
 ### Android permissions
 
