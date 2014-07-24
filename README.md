@@ -615,6 +615,8 @@ public class SingleCheckoutActivity extends PaymentActivity {
     }
 }
 ```
+|File type|File name|
+|---------|---------|
 |Activity class| SingleCheckoutActivity.java|
 |View file| activity_taksit_main.xml|
 
@@ -645,7 +647,8 @@ public class InstallmentActivity extends PaymentActivity {
     }
 }
 ```
-
+|File type|File name|
+|---------|---------|
 |Activity class| InstallmentActivity.java|
 |View file| activity_main.xml|
 
@@ -681,7 +684,8 @@ public class PayRegisteredActivity extends PaymentActivity {
       }
 }
 ```
-
+|File type|File name|
+|---------|---------|
 |Activity class| PayRegisteredActivity.java|
 |View file| activity_registered_card.xml|
 
@@ -725,7 +729,8 @@ public class CardRegisterActivity extends PaymentActivity {
     }
 }
 ```
-
+|File type|File name|
+|---------|---------|
 |Activity class| CardRegisterActivity.java|
 |View file| activity_card_register.xml|
 
@@ -747,7 +752,8 @@ public class SampleCardListActivity extends CardListActivity {
     }
 }
 ```
-
+|File type|File name|
+|---------|---------|
 |Activity class SampleCardListActivity.java|
 |View file| card_list.xml|
 |View file| card_item.xml|
