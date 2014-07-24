@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iyzi.mobile.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.iyzi.my.MenuActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="com.payment.mobile.android.PaymentActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="io.card.payment.DataEntryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.iyzi.my.redirect.FailActivity"
+            android:label="@string/title_activity_fail" >
+        </activity>
+        <activity
+            android:name="org.iyzi.my.redirect.SuccessActivity"
+            android:label="@string/title_activity_success" >
+        </activity>
+        <activity
+            android:name="com.iyzi.mobile.android.MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name="org.iyzi.my.SingleCheckoutActivity"
+            android:label="@string/title_activity_main"
+            android:parentActivityName="org.iyzi.my.MenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.iyzi.my.MenuActivity" />
+        </activity>
+        <activity
+            android:name="org.iyzi.my.CompactDesignActivity"
+            android:label="@string/title_activity_main"
+            android:parentActivityName="org.iyzi.my.MenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.iyzi.my.MenuActivity" />
+        </activity>
+        <activity
+            android:name="org.iyzi.my.CardRegisterActivity"
+            android:label="@string/title_activity_card_register"
+            android:parentActivityName="org.iyzi.my.MenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.iyzi.my.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.payment.mobile.register.CardRegisterFailActivity"
+            android:label="@string/title_activity_fail" >
+        </activity>
+        <activity
+            android:name="com.payment.mobile.register.CardRegisterSuccessActivity"
+            android:label="@string/title_activity_success" >
+        </activity>
+        <activity
+            android:name="org.iyzi.my.InstallmentActivity"
+            android:label="@string/title_activity_main"
+            android:parentActivityName="org.iyzi.my.MenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.iyzi.my.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.payment.mobile.register.CardListActivity"
+            android:label="@string/title_activity_card_registered" >
+        </activity>
+        <activity
+            android:name="org.iyzi.my.SampleCardListActivity"
+            android:label="@string/title_activity_card_registered" >
+        </activity>
+        <activity
+            android:name="org.iyzi.my.redirect.RegisterSuccessActivity"
+            android:label="Başarılı işlem" >
+        </activity>
+        <activity
+            android:name="org.iyzi.my.redirect.RegisterFailActivity"
+            android:label="Başarısız işlem" >
+        </activity>
+        <activity
+            android:name="org.iyzi.my.redirect.InstallmentSuccessActivity"
+            android:label="Başarılı işlem" >
+        </activity>
+        <activity
+            android:name="org.iyzi.my.redirect.InstallmentFailActivity"
+            android:label="Başarısız işlem" >
+        </activity>
+        <activity
+            android:name="org.iyzi.my.redirect.PayRegisterFailActivity"
+            android:label="Başarısız işlem" >
+        </activity>
+        <activity
+            android:name="org.iyzi.my.PayRegisteredActivity"
+            android:label="Kayıtlı kart ile ödeme"
+            android:parentActivityName="com.payment.mobile.register.CardListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.iyzi.my.CardListActivity" />
+        </activity>
+        <activity
+            android:name="com.iyzi.mobile.android.MyPaymentActivity"
+            android:label="@string/title_activity_my_payment" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

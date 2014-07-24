@@ -1,0 +1,292 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/CreditCardTablelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PaymentActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="4dp" >
+
+        <RelativeLayout
+            android:id="@+id/informationRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/productTextView"
+                style="@style/iyziTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/currencyTextView"
+                style="@style/iyziTextViewStyle"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="###"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/amountTextView"
+                style="@style/iyziTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/currencyTextView"
+                android:text="##.##"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/installmentTextView"
+                style="@style/iyziTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Type:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutInstallment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/pesinRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClick"
+                    android:text="@string/single_checkout_payment"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#777777" />
+
+                <RadioButton
+                    android:id="@+id/installmentRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClick"
+                    android:text="@string/payment_with_installment"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#777777" />
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <EditText
+                android:id="@+id/cardNumberTextEdit"
+                style="@style/iyziCreditCardEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/editstyle"
+                android:ems="10"
+                android:hint="@string/hint_card_number"
+                android:inputType="number"
+                android:maxLength="16"
+                android:nextFocusDown="@+id/cardHolderEditText"
+                android:nextFocusRight="@+id/cardHolderEditText" />
+
+            <requestFocus />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="right|center_vertical|clip_vertical|bottom"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/cardIssuerImageView"
+                    android:layout_width="64dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="right|"
+                    android:src="@drawable/unknown" />
+
+                <ImageView
+                    android:id="@+id/cardBrandImageView"
+                    android:layout_width="64dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="right|bottom"
+                    android:src="@drawable/unknown" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/scanButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/background_color"
+            android:drawableLeft="@drawable/scan_card"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="onScanPress"
+            android:text="@string/scan_card"
+            android:textColor="@color/scan_card_color"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="4dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="4dp" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/cardMonthEditText"
+                    style="@style/iyziEditTextStyle"
+                    android:layout_width="32dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/editstyle"
+                    android:ems="10"
+                    android:hint="@string/hint_expiry_month"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:nextFocusDown="@+id/cardYearEditText"
+                    android:nextFocusRight="@+id/cardYearEditText" >
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/iyziTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/cardMonthEditText"
+                    android:text="/"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/cardYearEditText"
+                    style="@style/iyziEditTextStyle"
+                    android:layout_width="32dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:background="@drawable/editstyle"
+                    android:ems="10"
+                    android:hint="@string/hint_expiry_year"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:nextFocusDown="@+id/verificationEditText"
+                    android:nextFocusRight="@+id/verificationEditText" />
+
+                <EditText
+                    android:id="@+id/verificationEditText"
+                    style="@style/iyziEditTextStyle"
+                    android:layout_width="48dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="17dp"
+                    android:layout_toRightOf="@+id/cardYearEditText"
+                    android:background="@drawable/editstyle"
+                    android:ems="10"
+                    android:hint="@string/hint_cvv"
+                    android:inputType="number"
+                    android:maxLength="3" />
+
+                <EditText
+                    android:id="@+id/cardHolderEditText"
+                    style="@style/iyziEditTextStyle"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/verificationEditText"
+                    android:background="@drawable/editstyle"
+                    android:ems="10"
+                    android:hint="@string/hint_card_holder"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/verificationEditText"
+                    android:nextFocusRight="@+id/paymentButton" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp" >
+
+        <Spinner
+            android:id="@+id/installmentSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp" >
+
+        <Button
+            android:id="@+id/paymentButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonshape"
+            android:paddingTop="7dp"
+            android:shadowRadius="5"
+            android:text="Pay"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

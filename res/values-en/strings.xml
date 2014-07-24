@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iyzico Mobile SDK Sample</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Sample application!</string>
+    <string name="title_activity_success">Successful Payment</string>
+    <string name="title_activity_fail">Failed Payment</string>
+    <string name="successful">Successful!</string>
+    <string name="fail">Failed!</string>
+    <string name="title_activity_menu">iyzimobile SDK Menu</string>
+    <string name="singlePayment">Single Checkout</string>
+    <string name="cardRegister">Card Registration</string>
+    <string name="title_activity_main">Payment</string>
+    <string name="title_activity_card_register">Card Registration</string>
+    <string name="card_registered_successful">Card registered successfully</string>
+    <string name="card_registered_failed">Card is not registered</string>
+    <string name="installment">Installment</string>
+    <string name="menu_title">  Mobile Sdk Menu</string>
+    <string name="registeredCardList">Registered Cards</string>
+    <string name="title_activity_card_registered">Registered Cards</string>
+    <string name="my_registered_cards">My Credit Cards</string>
+    <string name="menuButton">Go to Menu</string>
+    <string name="onTryAgainButton">Try Again</string>
+    <string name="title_activity_my_payment">Test Payment Activity</string>
+    <string name="scan_card">Scan card</string>
+    <string name="card_number">Card number:</string>
+    <string name="hint_cvv">CVV</string>
+    <string name="cvv">CVV:</string>
+    <string name="expiry">Expiry:</string>
+    <string name="hint_expiry_month">MM</string>
+    <string name="hint_expiry_year">YY</string>
+    <string name="hint_card_nick">Card nick</string>
+    <string name="card_nick">Card nick:</string>
+    <string name="hint_card_number">Card number</string>
+    <string name="payment_with_installment">Installment</string>
+    <string name="single_checkout_payment">Single Checkout</string>
+    <string name="hint_card_holder">Card holder</string>
+    <string name="add_credit_card">Add credit card</string>
+
+</resources>

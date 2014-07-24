@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/card_last_four_numbers"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_gravity="left|center_vertical|center_horizontal"
+        android:text="@string/my_registered_cards"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/background_color"
+        android:drawSelectorOnTop="false" />
+
+    <Button
+        android:id="@+id/addCreditCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addCreditCard"
+        android:text="@string/add_credit_card" />
+
+</LinearLayout>

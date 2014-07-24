@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SuccessActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/iyzico" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="80dp"
+        android:layout_weight="0.62"
+        android:text="Basically, iyzico is a payment platform located between banks and alternative payment methods and e-commerce sites. After companies make a contract with iyzico, they will be able to easily use virtual POS’s provided by the banks to iyzico and alternative payment methods on their own e-commerce sites.
+
+You can access contact details here: www.iyzico.com/support" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal|center"
+        android:layout_marginTop="80dp"
+        android:text="http://www.iyzico.com" />
+
+</LinearLayout>

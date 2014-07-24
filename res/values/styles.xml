@@ -1,0 +1,37 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="bright_blue">#C0D6EB</color>
+    <color name="darker_blue">#022A4F</color>
+    <color name="bright_red">#F74848</color>
+    <color name="bright_green">#85FF89</color>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="iyziEditTextStyle" parent="@style/AppBaseTheme">
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:height">80dp</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="iyziTextViewStyle" parent="@style/AppBaseTheme">
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="iyziCreditCardEditTextStyle" parent="@style/iyziEditTextStyle">
+        <item name="android:height">80dp</item>
+    </style>
+
+    <!-- Eidtable -->
+
+    <color name="background_color">#ebebeb</color>
+    <color name="foreground_color">#85FF89</color>
+    <color name="text_color">#777777</color>
+
+    <!-- Editable -->
+
+</resources>
